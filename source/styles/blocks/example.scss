@@ -9,18 +9,13 @@
 
 .example__title {
   font-family: $secondary-font;
+  color: $text-color-basic-black;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
-  color: $text-color-basic-black;
 }
 
-.example__text {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  color: inherit;
-}
+.example__text {}
 
 .example__list {}
 
@@ -28,16 +23,14 @@
 
 .example__content {
   font-family: $secondary-font;
+  color: $text-color-basic-black;
   font-size: 24px;
   line-height: 24px;
-  color: $text-color-basic-black;
   text-transform: uppercase;
 }
 
 .example__caption {
-  font-family: inherit;
-  font-size: inherit;
-  color: inherit;
+  font-size: 12px;
 }
 
 .example__cost {
