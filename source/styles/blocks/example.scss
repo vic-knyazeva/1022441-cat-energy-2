@@ -1,0 +1,52 @@
+.example {}
+
+.example__wrapper {}
+
+.example__header {}
+
+.example__title {
+  font-family: $secondary-font;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  color: $text-color-basic-black;
+}
+
+.example__text {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+
+.example__list {}
+
+.example__item {}
+
+.example__content {
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 24px;
+  color: $text-color-basic-black;
+  text-transform: uppercase;
+}
+
+.example__caption {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+.example__cost {
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 20px;
+  color: $text-color-basic-black;
+  text-transform: uppercase;
+}
+
+.example__cost-caption {}
+
+.example__cost-value {}
+
+.example__slider {}

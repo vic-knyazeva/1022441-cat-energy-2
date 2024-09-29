@@ -1,0 +1,16 @@
+.navigation-list {
+  list-style: none;
+}
+
+.navigation-list__item {}
+
+.navigation-list__item--current {}
+
+.navigation-list__link {
+  font-family: $secondary-font;
+  font-size: 20px;
+  line-height: 20px;
+  color: $text-color-basic-black;
+  text-transform: uppercase;
+  text-decoration: none;
+}

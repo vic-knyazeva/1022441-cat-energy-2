@@ -1,0 +1,41 @@
+.diets {}
+
+.diets__wrapper {}
+
+.diets__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.diets__item {}
+
+.diets__title {
+  font-family: $secondary-font;
+  color: $text-color-basic-black;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.diets__title.diets__title--weight-loss {}
+
+.diets__title.diets__title--weight-gain {}
+
+.diets__description {
+  font-family: inherit;
+  font-style: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+.diets__link {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $text-color-basic-black;
+  text-transform: uppercase;
+  text-decoration: none;
+}

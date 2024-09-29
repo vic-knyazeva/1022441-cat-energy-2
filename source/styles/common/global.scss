@@ -1,1 +1,15 @@
-/* здесь используйте глобальные селекторы img, body, html и так далее */
+html,
+body {
+  box-sizing: border-box;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: $primary-font;
+  font-size: 14px;
+  line-height: 18px;
+  color: $text-color-special-grey;
+  background-color: rgb(133, 182, 182);
+}

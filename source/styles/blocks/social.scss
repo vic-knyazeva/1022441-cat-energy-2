@@ -1,0 +1,19 @@
+.social {}
+
+.social__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social__item {}
+
+.social__link {
+  color: $text-color-special-grey;
+}
+
+.social__link.social__link--vkontakte {}
+
+.social__link.social__link--youtube {}
+
+.social__link.social__link--telegram {}
