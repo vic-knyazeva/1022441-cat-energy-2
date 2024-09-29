@@ -1,0 +1,34 @@
+/* stylelint-disable @stylistic/block-closing-brace-space-after */
+/* stylelint-disable block-no-empty */
+
+.product-cards {}
+
+.product-cards__item {}
+
+.product-cards__image-link {}
+
+.product-cards__image {}
+
+.product-cards__image.product-cards__image--weight-1000 {}
+
+.product-cards__image.product-cards__image--weight-500 {}
+
+.product-cards__description {}
+
+.product-cards__title {}
+
+.product-cards__link {
+  font-family: $secondary-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $text-color-special-black-2;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.product-cards__parameters-list {}
+
+.product-cards__button {}
+
+.product-cards__more-products {}

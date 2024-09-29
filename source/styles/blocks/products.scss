@@ -1,0 +1,15 @@
+/* stylelint-disable @stylistic/block-closing-brace-space-after */
+/* stylelint-disable block-no-empty */
+
+.products {}
+
+.products__wrapper {}
+
+.products__title {
+  font-family: $secondary-font;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.products__list {}

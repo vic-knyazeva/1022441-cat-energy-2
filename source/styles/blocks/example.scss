@@ -1,0 +1,48 @@
+/* stylelint-disable @stylistic/block-closing-brace-space-after */
+/* stylelint-disable block-no-empty */
+
+.example {}
+
+.example__wrapper {}
+
+.example__header {}
+
+.example__title {
+  font-family: $secondary-font;
+  color: $text-color-basic-black;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+.example__text {}
+
+.example__list {}
+
+.example__item {}
+
+.example__content {
+  font-family: $secondary-font;
+  color: $text-color-basic-black;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.example__caption {
+  font-size: 12px;
+}
+
+.example__cost {
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 20px;
+  color: $text-color-basic-black;
+  text-transform: uppercase;
+}
+
+.example__cost-caption {}
+
+.example__cost-value {}
+
+.example__slider {}

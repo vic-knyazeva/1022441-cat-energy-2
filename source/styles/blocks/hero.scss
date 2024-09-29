@@ -1,0 +1,25 @@
+/* stylelint-disable @stylistic/block-closing-brace-space-after */
+/* stylelint-disable block-no-empty */
+
+.hero {
+  font-family: $secondary-font;
+  color: $text-color-basic-white;
+  font-weight: 400;
+}
+
+.hero__wrapper {}
+
+.hero__title {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.hero__description {
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.hero__link {}
+
+.hero__link.button {}

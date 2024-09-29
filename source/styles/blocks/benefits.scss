@@ -1,0 +1,32 @@
+/* stylelint-disable @stylistic/block-closing-brace-space-after */
+/* stylelint-disable block-no-empty */
+
+.benefits {}
+
+.benefits__wrapper {}
+
+.benefits__title {
+  font-family: $secondary-font;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  color: $text-color-basic-black;
+}
+
+.benefits__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.benefits__item {}
+
+.benefits__description {}
+
+.benefits__description.benefits__description--leaf {}
+
+.benefits__description.benefits__description--speed {}
+
+.benefits__description.benefits__description--eat {}
+
+.benefits__description.benefits__description--time {}
