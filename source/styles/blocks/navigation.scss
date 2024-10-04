@@ -1,10 +1,37 @@
 /* stylelint-disable @stylistic/block-closing-brace-space-after */
 /* stylelint-disable block-no-empty */
+.navigation__wrapper {
+  display: flex;
+  margin: 10px 20px;
+}
 
 .navigation {}
 
-.navigation__toggle {}
 
-.navigation__wrapper {}
+.navigation__toggle {
+  margin: 10px 0 0 auto;
+  border: none;
+  background-color: $bg-basic-black;
+  mask-repeat: no-repeat;
+  mask-position: center center;
+}
 
-.navigation__list {}
+.navigation__toggle.toggle--open {
+  width: 24px;
+  height: 16px;
+  mask-image: url("../../icons/stack.svg#menu-open");
+  mask-size: 24px 16px;
+}
+
+.navigation__toggle.toggle--close {
+  width: 18px;
+  height: 18px;
+  mask-image: url("../../icons/stack.svg#menu-close");
+  mask-size: 18px 18px;
+}
+
+
+.navigation__list {
+  display: flex;
+  flex-direction: column;
+}

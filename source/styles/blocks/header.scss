@@ -2,8 +2,9 @@
 /* stylelint-disable block-no-empty */
 
 .header {
+  display: flex;
+  flex-direction: column;
   color: #ffffff;
-  padding: 10px 15px;
 }
 
 .header__logo-link { }
