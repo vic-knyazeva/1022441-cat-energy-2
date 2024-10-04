@@ -2,10 +2,21 @@
 /* stylelint-disable block-no-empty */
 
 .navigation-list {
+  padding: 0;
+  margin: 0;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
 }
 
-.navigation-list__item {}
+.navigation-list__item {
+  text-align: center;
+}
 
 .navigation-list__item--current {}
 
