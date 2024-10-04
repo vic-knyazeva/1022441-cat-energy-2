@@ -1,10 +1,52 @@
-/* stylelint-disable @stylistic/block-closing-brace-space-after */
-/* stylelint-disable block-no-empty */
-
-.header {
+.header__wrapper {
   display: flex;
-  flex-direction: column;
-  color: #ffffff;
+  flex-direction: row;
+  margin: 10px 20px;
 }
 
-.header__logo-link { }
+.header__logo-link {
+  opacity: 1;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.header__toggle {
+  margin: 10px 0 0 auto;
+  border: none;
+  background-color: $bg-basic-black;
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.header__toggle.toggle--open {
+  width: 24px;
+  height: 16px;
+  mask-image: url("../../icons/stack.svg#menu-open");
+  mask-size: 24px 16px;
+}
+
+.header__toggle.toggle--close {
+  width: 18px;
+  height: 18px;
+  mask-image: url("../../icons/stack.svg#menu-close");
+  mask-size: 18px 18px;
+}
+
+.navigation__list {
+  display: flex;
+}
