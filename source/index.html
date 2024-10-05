@@ -146,10 +146,10 @@
   <footer class="footer">
     <div class="footer__wrapper">
       <a class="footer__logo-link" href="./index.html">
-        <picture>
-          <source media="(min-width: 768px)" width="128" height="24" type="image/svg+xml" srcset="images/logo-footer.svg">
-          <img class="footer__logo-image" src="images/logo-footer-mobile.svg" width="128" height="24" alt="Логотип сайта 'Cat Energy'.">
-        </picture>
+        <span class="visually-hidden">Логотип Cat energy</span>
+        <svg class="footer__logo-image" width="128" height="24">
+          <use href="icons/stack.svg#logo-footer"></use>
+        </svg>
       </a>
       <div class="footer__social social">
         <h2 class="visually-hidden">Давайте дружить!</h2>
@@ -167,8 +167,13 @@
       </div>
       <div class="footer__designed-by designed-by">
         <a class="designed-by__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="designed-by__text">HTML Academy</span>
-          <img class="designed-by__image" src="images/html-academy.svg" width="27" height="34" alt="Логотип 'HTML Academy'.">
+          HTML Academy
+        </a>
+        <a class="designed-by__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually-hidden">Логотип HTML Academy</span>
+          <svg class="designed-by__image" width="27" height="34">
+            <use href="icons/stack.svg#html-academy"></use>
+          </svg>
         </a>
       </div>
     </div>
