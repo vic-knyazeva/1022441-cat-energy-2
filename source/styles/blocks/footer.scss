@@ -1,6 +1,3 @@
-/* stylelint-disable @stylistic/block-closing-brace-space-after */
-/* stylelint-disable block-no-empty */
-
 .footer {
   background-color: $bg-basic-grey;
 }
@@ -30,26 +27,13 @@
   &:focus,
   &:hover {
     color: $text-color-special-black-3;
+    outline: none;
   }
 
   &:active {
     color: $text-color-special-black-4;
   }
 }
-
-.footer__logo-image {
-  color: $text-color-special-black-1;
-
-  &:focus,
-  &:hover {
-    color: $text-color-special-black-3;
-  }
-
-  &:active {
-    color: $text-color-special-black-4;
-  }
-}
-
 
 .footer__social {
   width: 100%;

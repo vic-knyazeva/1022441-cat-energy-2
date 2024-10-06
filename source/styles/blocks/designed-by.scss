@@ -10,21 +10,13 @@
   text-decoration: none;
   color: $text-color-special-grey-6;
 
-  &:active {
-    opacity: 0.3;
-  }
-}
-
-.designed-by__image {
-  color: $text-color-special-grey-6;
-
   &:focus,
   &:hover {
     color: $text-color-basic-green;
+    outline: none;
   }
 
   &:active {
-    color: $text-color-basic-green;
     opacity: 0.3;
   }
 }

@@ -30,8 +30,10 @@
 .header__logo-link {
   opacity: 1;
 
+  &:focus,
   &:hover {
     opacity: 0.8;
+    outline: none;
   }
 
   &:active {
@@ -47,6 +49,7 @@
   mask-position: center center;
   cursor: pointer;
 
+  &:focus,
   &:hover {
     opacity: 0.6;
   }
