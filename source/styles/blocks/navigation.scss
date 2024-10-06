@@ -1,0 +1,14 @@
+.navigation {
+  position: relative;
+}
+
+.navigation__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+  }
+}
