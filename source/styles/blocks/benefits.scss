@@ -1,9 +1,18 @@
-/* stylelint-disable @stylistic/block-closing-brace-space-after */
-/* stylelint-disable block-no-empty */
+.benefits {
+  margin: 0 auto;
+}
 
-.benefits {}
+.benefits__wrapper {
+  margin: 0 20px;
 
-.benefits__wrapper {}
+  @media (min-width: $tablet-width) {
+    margin: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 110px;
+  }
+}
 
 .benefits__title {
   font-family: $secondary-font;
@@ -14,19 +23,81 @@
 }
 
 .benefits__list {
+  counter-reset: benefit-item;
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    gap: 20;
+  }
 }
 
-.benefits__item {}
+.benefits__item {
+  position: relative;
 
-.benefits__description {}
+  @media (min-width: $tablet-width) {
+    min-height: 280px;
+  }
+}
 
-.benefits__description.benefits__description--leaf {}
+.benefits__item::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: $bg-basic-green;
+  background-repeat: no-repeat;
+  background-position: center;
 
-.benefits__description.benefits__description--speed {}
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
+}
 
-.benefits__description.benefits__description--eat {}
+.benefits__item.benefits__item--leaf::before {
+  background-size: 30px 32px;
+  background-image: url("../../icons/stack.svg#leaf");
+}
 
-.benefits__description.benefits__description--time {}
+.benefits__item.benefits__item--speed::before {
+  background-size: 27px 29px;
+  background-image: url("../../icons/stack.svg#speed");
+}
+
+.benefits__item.benefits__item--eat::before {
+  background-size: 26px 30px;
+  background-image: url("../../icons/stack.svg#eat");
+}
+
+.benefits__item.benefits__item--time::before {
+  background-size: 27px 31px;
+  background-image: url("../../icons/stack.svg#time");
+}
+
+.benefits__item::after {
+  @media (min-width: $tablet-width) {
+    content: counter(benefit-item);
+    counter-increment: benefit-item;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 136px;
+    height: 280px;
+    font-family: $secondary-font;
+    font-size: 280px;
+    line-height: 280px;
+    font-weight: 400;
+    color: $text-color-basic-grey;
+    z-index: -1;
+  }
+}
+
+.benefits__description {
+  margin: 0 0 0 80px;
+}

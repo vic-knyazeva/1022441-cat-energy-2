@@ -2,12 +2,52 @@
 /* stylelint-disable block-no-empty */
 
 .hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   font-family: $secondary-font;
   color: $text-color-basic-white;
   font-weight: 400;
+  min-height: 480px;
 }
 
-.hero__wrapper {}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 320px;
+  height: 302px;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/index-background-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: unset;
+    right: 0;
+    width: 720px;
+    height: 694px;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/index-background-desktop@1x.png");
+  }
+}
+
+.hero__wrapper {
+  margin: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 110px;
+  }
+}
 
 .hero__title {
   font-size: 36px;

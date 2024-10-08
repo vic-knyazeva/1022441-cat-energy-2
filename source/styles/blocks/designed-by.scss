@@ -1,15 +1,22 @@
-/* stylelint-disable @stylistic/block-closing-brace-space-after */
-/* stylelint-disable block-no-empty */
-
-.designed-by {}
+.designed-by {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .designed-by__link {
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
-  color: $text-color-special-grey;
+  color: $text-color-special-grey-6;
+
+  &:focus,
+  &:hover {
+    color: $text-color-basic-green;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
-
-.designed-by__text {}
-
-.designed-by__image {}
