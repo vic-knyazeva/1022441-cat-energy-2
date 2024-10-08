@@ -172,8 +172,11 @@
   }
 }
 
+.diets__link:focus {
+  outline: none;
+}
+
 .diets__link,
-.diets__link:focus,
 .diets__link:hover {
   display: inline-block;
   font-family: $secondary-font;
@@ -183,7 +186,6 @@
   color: $text-color-basic-black;
   text-transform: uppercase;
   text-decoration: none;
-  outline: none;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
