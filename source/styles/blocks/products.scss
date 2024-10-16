@@ -1,17 +1,15 @@
-/* stylelint-disable @stylistic/block-closing-brace-space-after */
-/* stylelint-disable block-no-empty */
-
-.products {}
-
-.products__wrapper {
-  margin: 0 20px;
+.products {
+  width: 100%;
 
   @media (min-width: $tablet-width) {
-    margin: 0 30px;
+    width: $tablet-width;
+    padding: 0 30px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 110px;
+    width: $desktop-width;
+    padding: 0 110px;
   }
 }
 
@@ -20,6 +18,19 @@
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
-}
+  margin: 0;
+  padding: 20px;
 
-.products__list {}
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    width: $tablet-width;
+    padding: 20px 0;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width - 110px - 110px;
+    padding: 20px 0;
+  }
+}

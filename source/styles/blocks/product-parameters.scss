@@ -1,8 +1,4 @@
-/* stylelint-disable @stylistic/block-closing-brace-space-after */
-/* stylelint-disable block-no-empty */
-
 .product-parameters {
-  list-style: none;
   font-family: inherit;
   font-size: 12px;
   line-height: 16px;
@@ -10,8 +6,15 @@
   color: inherit;
 }
 
-.product-parameters__item {}
+.product-parameters__item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
-.product-parameters__name {}
+.product-parameters__name {
+  justify-self: start;
+}
 
-.product-parameters__value {}
+.product-parameters__value {
+  justify-self: end;
+}

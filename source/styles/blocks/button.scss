@@ -1,12 +1,25 @@
 .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: $secondary-font;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
   color: $text-color-basic-white;
   text-decoration: none;
   background-color: $bg-basic-green;
-  padding: 3px;
-  box-sizing: border-box;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+
+  &:hover {
+    background-color: $bg-basic-green-2;
+  }
+
+  &:active {
+    background-color: $bg-basic-green-2;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

@@ -2,6 +2,11 @@
   padding: 20px 0;
   border-top: 1px solid $bg-special-grey;
   border-bottom: 1px solid $bg-special-grey;
+
+  @media (min-width: $tablet-width) {
+    border-top: unset;
+    border-bottom: unset;
+  }
 }
 
 .social__list {
@@ -10,6 +15,7 @@
   padding: 0;
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
   align-items: center;

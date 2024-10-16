@@ -1,16 +1,17 @@
 .diets {
+  width: $mobile-width;
+  padding: 0 20px;
   margin: 0 auto;
-}
-
-.diets__wrapper {
-  margin: 0 20px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 30px;
+    width: $tablet-width;
+    padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 110px;
+    width: $desktop-width;
+    padding: 0 110px;
+    margin-top: 82px;
   }
 }
 
@@ -124,8 +125,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      width: 134px;
-      height: 56px;
+      width: 135px;
+      height: 57px;
       right: unset;
       left: 33px;
       top: 67px;
