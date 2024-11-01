@@ -284,13 +284,13 @@
 .additional-products__title-wrapper {
   padding: 0;
   margin: 0 auto;
-  width: $mobile-width - 20px - 20px;
+  width: $mobile-content-width;
 
   @media (min-width: $tablet-width) {
-    width: $tablet-width - 70px - 70px;
+    width: $tablet-content-width;
   }
 
   @media (min-width: $desktop-width) {
-    width: $desktop-width - 110px - 110px;
+    width: $desktop-content-width;
   }
 }

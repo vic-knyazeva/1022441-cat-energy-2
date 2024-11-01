@@ -26,7 +26,8 @@ $bg-special-black-2: #222222;
 
 
 $mobile-width: 320px;
+$mobile-content-width: $mobile-width - 20px - 20px;
 $tablet-width: 768px;
+$tablet-content-width: $tablet-width - 70px - 70px;
 $desktop-width: 1440px;
-
-$card-top-offset: 81px;
+$desktop-content-width: $desktop-width - 110px - 110px;

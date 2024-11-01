@@ -8,11 +8,11 @@
   display: block;
 }
 
-.slider__image.slider__image--before {
+.slider__image--before {
   clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);
 }
 
-.slider__image.slider__image--after {
+.slider__image--after {
   position: absolute;
   top: 0;
   left: 50%;
