@@ -1,37 +1,23 @@
 .navigation {
   position: relative;
   width: 100%;
-  border-top: 1px solid $bg-special-grey-3;
-
-  @media (min-width: $tablet-width) {
-    border-top: unset;
-  }
 }
 
-.navigation--inner {
-  border-top: 1px solid $bg-special-grey;
-
-  @media (min-width: $tablet-width) {
-    border-top: unset;
-  }
-}
-
-.navigation__wrapper {
+.navigation--opened .navigation__wrapper {
+  display: block;
   position: absolute;
   z-index: 10;
   width: 100%;
   background-color: $bg-basic-white;
+  border-top: 1px solid $bg-special-grey-3;
 
   @media (min-width: $tablet-width) {
     background-color: transparent;
+    border-top: unset;
   }
 }
 
-.navigation__wrapper--is-opened {
-  display: block;
-}
-
-.navigation__wrapper--is-closed {
+.navigation--closed .navigation__wrapper {
   display: none;
 
   @media (min-width: $tablet-width) {

@@ -1,10 +1,12 @@
 .products {
   width: 100%;
+  border-top: 1px solid $bg-special-grey-3;
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
     padding: 0 30px;
     margin: 0 auto;
+    border-top: unset;
   }
 
   @media (min-width: $desktop-width) {

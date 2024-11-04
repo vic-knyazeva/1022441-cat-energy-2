@@ -1,16 +1,17 @@
 .navigation-list {
-  display: flex;
   width: 100%;
+  display: flex;
   flex-direction: column;
   align-items: center;
   column-gap: 10px;
+  background-color: $bg-basic-white;
 
   @media (min-width: $tablet-width) {
     flex-flow: row wrap;
     justify-content: flex-end;
     padding: 10px 0;
     row-gap: 10px;
-    border-top: unset;
+    background-color: transparent;
   }
 }
 
