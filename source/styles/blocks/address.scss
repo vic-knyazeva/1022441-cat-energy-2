@@ -1,0 +1,13 @@
+.address {
+  @media (min-width: $tablet-width) {
+    text-align: right;
+  }
+}
+
+.address__street {
+  display: block;
+}
+
+.address__city {
+  display: block;
+}

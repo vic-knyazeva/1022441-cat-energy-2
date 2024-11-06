@@ -1,18 +1,22 @@
-/* stylelint-disable @stylistic/block-closing-brace-space-after */
-/* stylelint-disable block-no-empty */
-
-.products {}
-
-.products__wrapper {
-  margin: 0 20px;
+.products {
+  width: 100%;
+  border-top: 1px solid $bg-special-grey-3;
 
   @media (min-width: $tablet-width) {
-    margin: 0 30px;
+    width: $tablet-width;
+    padding: 0 30px;
+    margin: 0 auto;
+    border-top: unset;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 110px;
+    width: $desktop-width;
+    padding: 0 110px;
   }
+}
+
+.products--nojs {
+  border-top: unset;
 }
 
 .products__title {
@@ -20,6 +24,19 @@
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
-}
+  width: $mobile-width;
+  padding: 20px;
+  margin: 0 auto;
 
-.products__list {}
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    width: $tablet-width;
+    padding: 20px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-content-width;
+    padding: 20px 0;
+  }
+}

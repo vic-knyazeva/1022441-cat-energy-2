@@ -12,13 +12,22 @@ $text-color-special-black-3: #3e3e3e;
 $text-color-special-black-4: #6b6b6b;
 $text-color-basic-green: #68b738;
 
+$bg-basic-white: #ffffff;
 $bg-basic-green: #68b738;
+$bg-basic-green-2: #5eaa2f;
 $bg-basic-grey: #f2f2f2;
 $bg-special-grey: #d9d9d9;
+$bg-special-grey-1: #cdcdcd;
+$bg-special-grey-2:#d3d3d3;
+$bg-special-grey-3: #e6e6e6;
 $bg-special-grey-6: #666666;
 $bg-basic-black: #000000;
 $bg-special-black-2: #222222;
 
 
+$mobile-width: 320px;
+$mobile-content-width: $mobile-width - 20px - 20px;
 $tablet-width: 768px;
+$tablet-content-width: $tablet-width - 70px - 70px;
 $desktop-width: 1440px;
+$desktop-content-width: $desktop-width - 110px - 110px;
