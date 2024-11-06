@@ -141,11 +141,16 @@
           </address>
         </div>
       </div>
-      <picture>
-        <source width="1440" height="400" type="image/jpeg" media="(min-width: 1440px)" srcset="images/map@1x.jpg 1x, images/map@2x.jpg 2x">
-        <source width="768" height="400" type="image/jpeg" media="(min-width: 768px)" srcset="images/map-tablet@1x.jpg 1x, images/map-tablet@2x.jpg 2x">
-        <img class="contacts__map" src="images/map-mobile@1x.jpg" srcset="images/map-mobile@2x.jpg 2x" width="320" height="362" alt="Изображение расположения нашего офиса на карте.">
-      </picture>
+      <div class="contacts__location">
+        <iframe class="contacts__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7994.295953931398!2d30.31873440598977!3d59.939210911705025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1730887844721!5m2!1sen!2sru" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная, д. 19/8, Санкт-Петербург" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <noscript>
+          <picture>
+            <source width="1440" height="400" type="image/jpeg" media="(min-width: 1440px)" srcset="images/map@1x.jpg 1x, images/map@2x.jpg 2x">
+            <source width="768" height="400" type="image/jpeg" media="(min-width: 768px)" srcset="images/map-tablet@1x.jpg 1x, images/map-tablet@2x.jpg 2x">
+            <img class="contacts__map" src="images/map-mobile@1x.jpg" srcset="images/map-mobile@2x.jpg 2x" width="320" height="362" alt="Изображение расположения нашего офиса на карте.">
+          </picture>
+        </noscript>
+      </div>
     </section>
   </main>
   <footer class="footer">
