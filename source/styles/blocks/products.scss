@@ -15,6 +15,10 @@
   }
 }
 
+.products--nojs {
+  border-top: unset;
+}
+
 .products__title {
   font-family: $secondary-font;
   font-size: 36px;
