@@ -13,6 +13,13 @@
   border: none;
   cursor: pointer;
   padding: 10px 20px;
+  text-align: center;
+  word-break: break-word;
+
+  &:focus {
+    background-color: $bg-basic-green-2;
+    outline: none;
+  }
 
   &:hover {
     background-color: $bg-basic-green-2;
@@ -22,4 +29,8 @@
     background-color: $bg-basic-green-2;
     color: rgba(255, 255, 255, 0.3);
   }
+}
+
+.button--more {
+  padding: 10px 21px 10px 19px;
 }

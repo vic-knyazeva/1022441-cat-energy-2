@@ -24,6 +24,8 @@
 }
 
 .contacts__wrapper--inner {
+  background-color: $bg-basic-white;
+
   @media (min-width: $tablet-width) {
     background-color: $bg-basic-grey;
   }
@@ -63,8 +65,8 @@
   font-weight: 400;
   color: $text-color-special-black-1;
   text-transform: uppercase;
-  margin: 26px 0 0;
-  padding: 0;
+  margin: 16px 0 0;
+  padding: 10px 10px 10px 0;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

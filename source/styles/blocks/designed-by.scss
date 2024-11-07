@@ -3,9 +3,14 @@
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
+  margin: 17px 0 0;
 
   @media (min-width: $tablet-width) {
-    column-gap: 20px;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: auto 27px;
+    margin: 0;
+    padding: 0 5px 0 0;
   }
 }
 
@@ -15,6 +20,11 @@
   text-decoration: none;
   word-break: break-all;
   color: $text-color-special-grey-6;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 0 0 5px;
+  }
 
   &:focus,
   &:hover {
@@ -28,5 +38,9 @@
 }
 
 .designed-by__link--logo {
-  padding-top: 3px;
+  margin: 3px 0 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }

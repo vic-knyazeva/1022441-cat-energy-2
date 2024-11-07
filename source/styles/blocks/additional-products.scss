@@ -1,17 +1,20 @@
 .additional-products {
   position: relative;
-  margin-top: 40px;
   overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 35px;
+  }
 }
 
 .additional-products__wrapper {
   width: $mobile-width;
-  padding: 0 20px;
-  margin: 40px auto;
+  padding: 15px 20px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
-    padding: 0 30px;
+    padding: 15px 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -32,6 +35,7 @@
 
   position: relative;
   padding: 0;
+  margin: 25px 0 20px;
   display: inline-block;
   width: unset;
 
@@ -40,16 +44,18 @@
     background-color: $bg-basic-green;
     position: absolute;
     height: 2px;
-    top: 12px;
+    top: 10px;
     width: 100vw;
-    left: calc(-100vw - 40px);
+    left: calc(-100vw - 41px);
 
     @media (min-width: $tablet-width) {
-      top: 16px;
+      top: 14px;
+      left: calc(-100vw - 40px);
     }
 
     @media (min-width: $desktop-width) {
-      top: 20px;
+      top: 17px;
+      left: calc(-100vw - 40px);
     }
   }
 
@@ -58,25 +64,29 @@
     background-color: $bg-basic-green;
     position: absolute;
     height: 2px;
-    top: 12px;
+    top: 10px;
     width: 100vw;
-    left: calc(100% + 40px);
+    left: calc(100% + 41px);
 
     @media (min-width: $tablet-width) {
-      top: 16px;
+      top: 14px;
+      left: calc(100% + 40px);
     }
 
     @media (min-width: $desktop-width) {
-      top: 20px;
+      top: 17px;
+      left: calc(100% + 40px);
     }
   }
 
   @media (min-width: $tablet-width) {
     font-size: 32px;
     line-height: 32px;
+    margin: 74px 0 65px;
   }
 
   @media (min-width: $desktop-width) {
+    margin: 72px 0 78px;
     font-size: 40px;
     line-height: 40px;
   }
@@ -86,20 +96,18 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  border-top: 1px solid $bg-special-grey-1;
 }
 
 .additional-products__item {
   border-bottom: 1px solid $bg-special-grey-1;
-  padding: 26px 0;
+  padding: 0 0 18px;
 
   @media (min-width: $tablet-width) {
-    border: 1px solid $bg-special-grey-1;
-    border-top: unset;
-    padding: 26px 38px 28px;
     display: grid;
     grid-template-columns: 1fr auto;
     grid-template-rows: 1fr auto;
+    border: 1px solid $bg-special-grey-1;
+    border-top: unset;
   }
 
   @media (min-width: $desktop-width) {
@@ -109,18 +117,58 @@
     justify-content: center;
     border-left: unset;
     border-right: unset;
+    padding: 15px 0;
+  }
+}
+
+.additional-products__item:nth-child(odd) {
+  @media (min-width: $tablet-width) {
+    padding: 25px 38px 27px;
+    row-gap: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 15px 0 16px;
+  }
+}
+
+.additional-products__item:nth-child(even) {
+  @media (min-width: $tablet-width) {
+    padding: 26px 38px 28px;
+    row-gap: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 15px 0 16px;
+  }
+}
+
+.additional-products__item:first-of-type {
+  border-top: 1px solid $bg-special-grey-1;
+  margin-bottom: -1px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
     padding: 15px 0 16px;
   }
 }
 
 .additional-products__item:last-of-type {
+  @media (min-width: $tablet-width) {
+    padding: 26px 38px 27px;
+  }
+
   @media (min-width: $desktop-width) {
-    border-bottom: 1px solid $bg-special-grey-1;
+    padding: 15px 0 16px;
   }
 }
 
 .additional-products__item-title {
   margin: 0;
+  padding: 13px 0;
   font-family: $secondary-font;
   font-size: 16px;
   font-weight: 400;
@@ -128,6 +176,13 @@
   text-transform: uppercase;
   color: $text-color-special-black-2;
   align-self: center;
+
+  @media (min-width: $tablet-width) {
+    align-self: start;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 0;
+  }
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
@@ -143,19 +198,43 @@
   line-height: 14px;
   color: $text-color-special-grey;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr auto;
+  margin: 0 0 15px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 3px 0 0;
+    grid-template-columns: 1fr 46px;
+    column-gap: 47px;
+    font-size: 16px;
+    line-height: 20px;
+  }
 
   @media (min-width: $desktop-width) {
     font-size: 16px;
-    margin: 16px 0 0;
+    margin: 12px 0 0 21px;
   }
 }
 
+.additional-products__item-size {
+  padding: 0;
+  margin: 0;
+}
+
 .additional-products__item-price {
+  padding: 0 1px 0 0;
+  margin: 0;
   justify-self: right;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 2px 0 0;
+  }
 }
 
 .additional-products__button {
+  font-size: 16px;
+  line-height: 20px;
+
   @media (min-width: $tablet-width) {
     grid-column: 1 / 3;
     grid-row: 2;
@@ -174,11 +253,11 @@
 .additional-products__banner {
   position: relative;
   display: grid;
-  grid-template-rows: [banner-row-1] 191px [banner-row-2] auto;
+  grid-template-rows: [banner-row-1] 187px [banner-row-2] auto;
   width: 100%;
   min-height: 290px;
   padding: 0;
-  margin: 20px auto;
+  margin: 35px auto 20px;
   background-color: rgba(104, 183, 56, 0.85);
   z-index: -1;
   align-self: start;
@@ -186,7 +265,9 @@
   @media (min-width: $tablet-width) {
     grid-template-rows: [banner-r-1] 100%;
     grid-template-columns: [banner-c-1] 1fr [banner-c-2] 1fr;
+    column-gap: 135px;
     min-height: 200px;
+    margin: 70px auto 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -225,23 +306,25 @@
 }
 
 .additional-products__banner::after {
+  content: "";
+  position: absolute;
   grid-row-start: banner-row-1;
   display: block;
-  content: "";
-  place-self: center center;
+  justify-self: center;
+  top: 58px;
   width: 78px;
   height: 81px;
   background-color: #ffffff;
   mask-image: url("../../icons/stack.svg#gift");
   mask-size: 78px 81px;
   mask-repeat: no-repeat;
-  mask-position: center center;
 
   @media (min-width: $tablet-width) {
     grid-row-start: banner-r-1;
     grid-column-start: banner-c-1;
-    place-self: center start;
-    margin-left: 80px;
+    justify-self: start;
+    top: 57px;
+    left: 79px;
   }
 
   @media (min-width: $desktop-width) {
@@ -250,13 +333,14 @@
     margin-left: 0;
     transform: none;
     place-self: center center;
+    left: 85px;
   }
 }
 
 .additional-products__banner-text {
   grid-row-start: banner-row-2;
   text-align: center;
-  padding: 0 55px 10px;
+  padding: 0 61px 0 58px;
   margin: 0;
   font-family: $primary-font;
   font-size: 16px;
@@ -270,14 +354,14 @@
     grid-column-start: banner-c-2;
     text-align: left;
     align-self: center;
-    padding: 10px 180px 10px 0;
+    padding: 11px 90px 10px 0;
   }
 
   @media (min-width: $desktop-width) {
     grid-row-start: banner-row-2;
     grid-column-start: banner-column-1;
     text-align: center;
-    padding: 0 55px 10px;
+    padding: 0 40px 10px;
   }
 }
 
