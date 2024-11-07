@@ -18,7 +18,8 @@
 }
 
 .navigation--nojs .navigation__wrapper,
-.navigation--opened.navigation--nojs .navigation__wrapper {
+.navigation--opened.navigation--nojs .navigation__wrapper,
+.navigation--closed.navigation--nojs .navigation__wrapper {
   position: relative;
   display: block;
 }
