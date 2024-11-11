@@ -1,5 +1,5 @@
 .example {
-  background-color: $bg-basic-grey;
+  background-color: $bg-basic-grey-1;
   padding: 0;
 
   @media (min-width: $tablet-width) {
@@ -45,36 +45,90 @@
 }
 
 .example__list {
-  width: 280px;
-  height: 70px;
+  position: relative;
   display: flex;
-  gap: 32px;
+  align-items: flex-start;
+  column-gap: 32px;
+  width: 280px;
   margin: 0;
+  padding: 0;
+  list-style: none;
 
   @media (min-width: $tablet-width) {
     width: 387px;
-    height: 77px;
-    gap: 43px;
+    column-gap: 43px;
     grid-column: 1 / 2;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    gap: 42px;
+    column-gap: 42px;
     grid-column: 1 / 2;
   }
 }
 
+.example__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 124px;
+  min-height: 56px;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    min-height: 72px;
+  }
+}
+
 .example__term {
+  position: relative;
   font-family: $secondary-font;
   color: $text-color-basic-black;
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
+  text-align: center;
+  word-break: break-all;
+  margin: 0;
+  padding: 13px 5px 17px;
+  flex-grow: 1;
+  border: 1px solid $bg-special-grey-1;
+  border-radius: 3px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+    padding: 14px 5px 19px;
+  }
 }
 
 .example__caption {
+  display: inline-block;
+  align-self: center;
+  width: 87px;
+  margin: -9px 0 0;
+  padding: 0 16px;
   font-size: 12px;
+  line-height: 12px;
+  text-transform: lowercase;
+  background-color: $bg-basic-grey-1;
+  z-index: 1;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+    background-color: $bg-basic-white;
+    width: unset;
+    max-width: 146px;
+    padding: 0 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $bg-basic-grey;
+  }
 }
 
 .example__cost {
@@ -83,4 +137,10 @@
   line-height: 20px;
   color: $text-color-basic-black;
   text-transform: uppercase;
+  margin: 50px 0 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
