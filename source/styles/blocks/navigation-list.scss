@@ -20,11 +20,12 @@
   word-break: break-all;
   width: 100%;
   text-align: center;
-  padding: 0;
+  padding: 23px 0 19px;
   margin: 0;
 
   @media (min-width: $tablet-width) {
     width: auto;
+    padding: 0;
     text-align: unset;
     border-bottom: unset;
   }

@@ -30,7 +30,7 @@
 }
 
 .footer__logo-link {
-  padding: 20px 0;
+  padding: 40px 0 15px;
   text-decoration: none;
   color: $text-color-special-black-1;
 
@@ -51,7 +51,7 @@
 
 .footer__designed-by {
   width: 100%;
-  padding: 20px 0;
+  padding: 17px 0 20px;
 
   @media (min-width: $tablet-width) {
     max-width: 168px;

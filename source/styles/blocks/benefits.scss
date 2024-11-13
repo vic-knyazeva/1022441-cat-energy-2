@@ -1,6 +1,6 @@
 .benefits {
   width: $mobile-width;
-  padding: 0 20px 20px;
+  padding: 0 20px 49px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
@@ -20,6 +20,8 @@
   line-height: 40px;
   font-weight: 400;
   color: $text-color-basic-black;
+  margin: 0 0 20px;
+  padding: 20px 0;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -122,8 +124,7 @@
 }
 
 .benefits__description {
-  word-break: break-all;
-  margin: 0 0 0 80px;
+  margin: 2px 5px 0 80px;
 
   @media (min-width: $tablet-width) {
     margin: 126px 0 0;
