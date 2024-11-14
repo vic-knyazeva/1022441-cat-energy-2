@@ -33,6 +33,12 @@
 .example__text {
   margin: 0 0 20px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 55px 0;
+  }
 }
 
 .example__title {
@@ -47,7 +53,7 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    padding: 5px 5px 5px 0;
+    padding: 45px 5px 5px 0;
   }
 }
 

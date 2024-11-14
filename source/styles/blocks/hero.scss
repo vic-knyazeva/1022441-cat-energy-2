@@ -41,7 +41,6 @@
   font-family: $secondary-font;
   color: $text-color-basic-white;
   font-weight: 400;
-  min-height: 480px;
   width: $mobile-width;
   margin: 0 auto;
   padding: 0 20px 20px;
@@ -49,12 +48,12 @@
   @media (min-width: $tablet-width) {
     align-items: flex-start;
     width: $tablet-width;
-    min-height: 694px;
-    padding: 0 30px;
+    padding: 0 30px 1px;
   }
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
+    min-height: 694px;
     padding: 0 110px;
   }
 }
@@ -72,7 +71,7 @@
     font-size: 60px;
     line-height: 60px;
     text-align: left;
-    margin: 30px 20px 20px 90px;
+    margin: 36px 20px 20px 90px;
   }
 
   @media (min-width: $desktop-width) {
@@ -91,7 +90,7 @@
     font-size: 20px;
     line-height: 20px;
     text-align: left;
-    margin: 30px 20px 20px 90px;
+    margin: 20px 20px 21px 90px;
   }
 
   @media (min-width: $desktop-width) {
@@ -100,10 +99,13 @@
 }
 
 .hero__image {
-  margin: 0 auto;
+  display: flex;
+  margin-bottom: 3px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
+    padding: 0;
+    margin-bottom: 0;
     max-width: 709px;
     align-self: flex-end;
   }
@@ -123,9 +125,9 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 270px;
+    top: 266px;
     left: 120px;
-    min-width: 244px;
+    min-width: 242px;
     min-height: 54px;
   }
 

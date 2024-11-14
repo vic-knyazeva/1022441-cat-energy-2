@@ -1,4 +1,13 @@
 .benefits {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 6px;
+    border-bottom: 1px solid $bg-special-grey-3;
+  }
+}
+
+.benefits__wrapper {
   width: $mobile-width;
   padding: 0 20px 49px;
   margin: 0 auto;
@@ -26,7 +35,7 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    padding: 5px 5px 5px 0;
+    padding: 45px 5px 52px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -46,7 +55,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 37px 61px;
+    gap: 37px 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -63,6 +72,7 @@
 
   @media (min-width: $tablet-width) {
     min-height: 280px;
+    padding-right: 80px;
   }
 
   @media (min-width: $desktop-width) {
@@ -110,16 +120,23 @@
     content: counter(benefit-item);
     counter-increment: benefit-item;
     position: absolute;
+    display: block;
     top: 0;
-    left: 114px;
+    left: 111px;
     width: 136px;
-    height: 280px;
+    height: 229px;
     font-family: $secondary-font;
     font-size: 280px;
-    line-height: 280px;
+    line-height: 201px;
     font-weight: 400;
     color: $text-color-basic-grey;
     z-index: -1;
+  }
+}
+
+.benefits__item:first-child::after {
+  @media (min-width: $tablet-width) {
+    left: 119px;
   }
 }
 
@@ -127,6 +144,8 @@
   margin: 2px 5px 0 80px;
 
   @media (min-width: $tablet-width) {
-    margin: 126px 0 0;
+    margin: 111px 0 0;
+    font-size: 16px;
+    line-height: 24px;
   }
 }

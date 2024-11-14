@@ -39,7 +39,7 @@
   padding: 24px 20px 19px;
 
   @media (min-width: $tablet-width) {
-    padding: 77px 316px 53px 52px;
+    padding: 77px 316px 59px 52px;
   }
 
   @media (min-width: $desktop-width) {
@@ -59,6 +59,7 @@
     @media (min-width: $tablet-width) {
       width: 200px;
       height: 200px;
+      top: 92px;
       right: 63px;
     }
 
@@ -86,7 +87,7 @@
     @media (min-width: $tablet-width) {
       top: 81px;
       left: unset;
-      right: 81px;
+      right: 93px;
       background-size: cover;
       background-position: center;
       width: 140px;
@@ -147,7 +148,7 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    padding: 5px 5px 5px 0;
+    padding: 0 5px 5px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -175,6 +176,7 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
+    margin: 19px 0 37px;
   }
 
   @media (min-width: $desktop-width) {
@@ -214,16 +216,17 @@
 .diets__link::after {
   content: "";
   display: inline-block;
-  width: 48px;
-  height: 14px;
+  width: 60px;
+  height: 15px;
   background-color: $bg-basic-black;
   mask-image: url("../../icons/stack.svg#arrow-right-short");
-  mask-size: 28px 12px;
+  mask-size: 32px 12px;
   mask-repeat: no-repeat;
-  mask-position: 14px 1px;
+  mask-position: 12px 2px;
 
   @media (min-width: $tablet-width) {
     height: 15px;
+    mask-position: 22px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -235,7 +238,11 @@
 .diets__link:hover::after {
   mask-image: url("../../icons/stack.svg#arrow-right");
   mask-size: 32px 12px;
-  mask-position: 16px 0;
+  mask-position: 16px 2px;
+
+  @media (min-width: $tablet-width) {
+    mask-position: 26px 0;
+  }
 }
 
 .diets__link:active::after {
