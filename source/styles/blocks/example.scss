@@ -57,6 +57,24 @@
   }
 }
 
+.example__container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    gap: 58px;
+    align-items: start;
+  }
+}
+
 .example__list {
   position: relative;
   display: flex;
@@ -156,5 +174,31 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
+    text-align: right;
+    padding-right: 1px;
+  }
+}
+
+.example__cost-caption {
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding: 11px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+    padding: 0;
+  }
+}
+
+.example__cost-value {
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding: 9px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+    padding: 0;
   }
 }

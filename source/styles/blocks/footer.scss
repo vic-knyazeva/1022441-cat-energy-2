@@ -22,15 +22,18 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  padding: 40px 0 17px;
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 128px auto 162px;
     column-gap: 20px;
+    padding: 36px 0 34px;
   }
 }
 
 .footer__logo-link {
-  padding: 40px 0 15px;
+  padding: 0 0 15px;
   text-decoration: none;
   color: $text-color-special-black-1;
 
@@ -43,10 +46,18 @@
   &:active {
     color: $text-color-special-black-4;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .footer__social {
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 18px;
+  }
 }
 
 .footer__designed-by {
