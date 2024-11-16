@@ -6,6 +6,10 @@
     padding: 9px 0 0;
     margin: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 9px 0 0 35px;
+  }
 }
 
 .address__street {
@@ -28,5 +32,9 @@
 
   @media (min-width: $tablet-width) {
     padding: 10px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 9px 0;
   }
 }

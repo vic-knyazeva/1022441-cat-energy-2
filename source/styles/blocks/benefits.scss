@@ -5,6 +5,11 @@
     padding-bottom: 6px;
     border-bottom: 1px solid $bg-special-grey-3;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: unset;
+    border-bottom: unset;
+  }
 }
 
 .benefits__wrapper {
@@ -39,7 +44,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 5px 5px 5px 0;
+    padding: 71px 5px 52px 0;
   }
 }
 
@@ -61,7 +66,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-flow: row nowrap;
-    gap: 37px 80px;
+    gap: 37px 79px;
   }
 }
 
@@ -77,6 +82,7 @@
 
   @media (min-width: $desktop-width) {
     min-width: 246px;
+    padding-right: 0;
   }
 }
 

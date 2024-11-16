@@ -43,7 +43,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 77px 61px 55px 52px;
+    padding: 77px 61px 61px 52px;
     width: calc(50% - 40px);
   }
 
@@ -154,7 +154,7 @@
   @media (min-width: $desktop-width) {
     font-size: 36px;
     line-height: 36px;
-    padding: 5px 5px 5px 164px;
+    padding: 0 5px 5px 162px;
   }
 }
 
@@ -176,12 +176,24 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    margin: 19px 0 37px;
+    padding: 0 0 37px;
+    margin: 19px 0 22px;
+
+    &::after {
+      content: unset;
+      position: unset;
+      display: unset;
+      width: unset;
+      height: unset;
+      margin-top: unset;
+      background-color: unset;
+    }
   }
 
   @media (min-width: $desktop-width) {
     font-size: 16px;
     line-height: 24px;
+    padding: 49px 0 12px;
   }
 }
 
