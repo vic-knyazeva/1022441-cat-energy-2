@@ -106,14 +106,16 @@
     display: grid;
     grid-template-columns: 1fr auto;
     grid-template-rows: 1fr auto;
+    gap: 22px 26px;
     border: 1px solid $bg-special-grey-1;
     border-top: unset;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr 284px;
+    grid-template-columns: 1fr 1fr 244px;
     grid-template-rows: 1fr;
+    column-gap: 10px;
     justify-content: center;
     border-left: unset;
     border-right: unset;
@@ -123,8 +125,7 @@
 
 .additional-products__item:nth-child(odd) {
   @media (min-width: $tablet-width) {
-    padding: 25px 38px 27px;
-    row-gap: 22px;
+    padding: 25px 37px 27px;
   }
 
   @media (min-width: $desktop-width) {
@@ -134,8 +135,7 @@
 
 .additional-products__item:nth-child(even) {
   @media (min-width: $tablet-width) {
-    padding: 26px 38px 28px;
-    row-gap: 22px;
+    padding: 26px 37px 28px;
   }
 
   @media (min-width: $desktop-width) {
@@ -176,18 +176,20 @@
   text-transform: uppercase;
   color: $text-color-special-black-2;
   align-self: center;
+  word-break: break-all;
 
   @media (min-width: $tablet-width) {
     align-self: start;
     font-size: 20px;
     line-height: 20px;
     padding: 0;
+    min-width: 300px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 20px;
-    margin: 11px 0 0;
+    padding: 10px 0 0 1px;
   }
 }
 
@@ -199,11 +201,11 @@
   color: $text-color-special-grey;
   display: grid;
   grid-template-columns: 1fr auto;
-  margin: 0 0 15px;
-  padding: 0;
+  padding: 0 0 15px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
-    margin: 3px 0 0;
+    padding: 3px 0 0;
     grid-template-columns: 1fr 46px;
     column-gap: 47px;
     font-size: 16px;
@@ -211,23 +213,31 @@
   }
 
   @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 72px;
     font-size: 16px;
-    margin: 12px 0 0 21px;
+    padding: 13px 0 0;
   }
 }
 
 .additional-products__item-size {
   padding: 0;
   margin: 0;
+  word-break: break-all;
 }
 
 .additional-products__item-price {
   padding: 0 1px 0 0;
   margin: 0;
   justify-self: right;
+  word-break: break-all;
 
   @media (min-width: $tablet-width) {
-    padding: 0 2px 0 0;
+    padding: 0 3px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-self: left;
+    padding: 0;
   }
 }
 
@@ -244,7 +254,6 @@
     grid-column: 3;
     grid-row: 1;
     align-self: self-start;
-    margin: 0 0 0 40px;
     padding: 10px 20px;
     font-size: 16px;
   }
@@ -271,11 +280,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-rows: [banner-row-1] 150px [banner-row-2] auto;
+    grid-template-rows: [banner-row-1] 151px [banner-row-2] auto;
     grid-template-columns: [banner-column-1] 245px;
     width: 245px;
     min-height: 288px;
-    margin: 0;
+    margin: 1px 0 0;
   }
 }
 
@@ -361,7 +370,7 @@
     grid-row-start: banner-row-2;
     grid-column-start: banner-column-1;
     text-align: center;
-    padding: 0 40px 10px;
+    padding: 0 39px 10px 41px;
   }
 }
 

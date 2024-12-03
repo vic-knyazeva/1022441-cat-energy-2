@@ -22,17 +22,17 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 0 17px;
+  padding: 40px 0 37px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 163px 1fr 163px;
     column-gap: 20px;
-    padding: 55px 0;
+    padding: 55px 0 51px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 65px 0 45px;
+    padding: 65px 0 63px;
   }
 }
 
