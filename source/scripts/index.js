@@ -25,6 +25,4 @@ if (navMain !== null && navToggle !== null) {
       navToggle.classList.add('header__toggle--close');
     }
   });
-} else {
-  console.error('required class not found');
 }
