@@ -146,6 +146,24 @@
   width: 100%;
   height: 56px;
   padding: 12px;
+
+  &:focus-within,
+  &:focus {
+    outline: none;
+    border-color: #cdcdcd;
+  }
+
+  &:hover {
+    border-color: #444444;
+  }
+
+  &:active {
+    border-color: #444444;
+  }
+}
+
+.subscription__input.error {
+  border-color: #ff8282;
 }
 
 .subscription__button {
