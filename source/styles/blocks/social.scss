@@ -1,9 +1,10 @@
 .social {
-  padding: 20px 0;
+  padding: 20px 0 19px;
   border-top: 1px solid $bg-special-grey;
   border-bottom: 1px solid $bg-special-grey;
 
   @media (min-width: $tablet-width) {
+    padding: 0;
     border-block: unset;
   }
 }
@@ -15,9 +16,13 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 24px;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .social__item {

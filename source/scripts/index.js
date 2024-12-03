@@ -1,9 +1,11 @@
 const navMain = document.querySelector('.navigation');
 const navToggle = document.querySelector('.header__toggle');
+const headerWrapper = document.querySelector('.header__wrapper');
 const productsTitle = document.querySelector('.products');
 
 navMain.classList.remove('navigation--nojs');
 navToggle.classList.remove('header__toggle--nojs');
+headerWrapper.classList.remove('header__wrapper--nojs');
 
 if (productsTitle !== null) {
   productsTitle.classList.remove('products--nojs');

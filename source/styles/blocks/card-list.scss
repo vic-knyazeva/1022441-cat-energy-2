@@ -8,10 +8,11 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 60px;
+    margin: 50px 0 0;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    gap: 80px;
+    gap: 63px 80px;
   }
 }

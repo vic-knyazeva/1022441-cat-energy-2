@@ -3,15 +3,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  column-gap: 10px;
   background-color: $bg-basic-white;
 
   @media (min-width: $tablet-width) {
     flex-flow: row wrap;
     justify-content: flex-end;
-    padding: 10px 0;
-    row-gap: 10px;
+    padding: 4px 4px 10px 0;
+    gap: 10px 34px;
     background-color: transparent;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 2px;
+    column-gap: 33px;
   }
 }
 
@@ -20,13 +24,44 @@
   word-break: break-all;
   width: 100%;
   text-align: center;
-  padding: 10px 0;
+  padding: 23px 0 19px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     width: auto;
+    padding: 0;
     text-align: unset;
-    padding: unset;
     border-bottom: unset;
+  }
+}
+
+.navigation-list__item--current {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      margin-top: 8px;
+      height: 2px;
+      width: 100%;
+      background-color: $text-color-basic-green;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      background-color: $text-color-basic-white;
+    }
+  }
+}
+
+.navigation--inner .navigation-list__item--current {
+  @media (min-width: $tablet-width) {
+    &::after {
+      background-color: $text-color-basic-green;
+    }
   }
 }
 
@@ -37,6 +72,19 @@
   color: $text-color-basic-black;
   text-transform: uppercase;
   text-decoration: none;
+  outline: none;
+
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
@@ -44,13 +92,14 @@
   }
 
   @media (min-width: $desktop-width) {
+    color: $text-color-basic-white;
     font-size: 20px;
     line-height: 20px;
   }
 }
 
-.navigation-list--main .navigation-list__link {
+.navigation--inner .navigation-list__link {
   @media (min-width: $desktop-width) {
-    color: $text-color-basic-white;
+    color: $text-color-special-black-1;
   }
 }
