@@ -44,6 +44,10 @@ $card-top-offset: 81px;
   place-self: start center;
   align-content: center;
 
+  &:focus {
+    outline: none;
+  }
+
   @media (min-width: $tablet-width) {
     height: 210px;
   }
@@ -88,6 +92,10 @@ $card-top-offset: 81px;
   text-decoration: none;
   text-transform: uppercase;
 
+  &:focus {
+    outline: none;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
@@ -124,11 +132,6 @@ $card-top-offset: 81px;
   @media (min-width: $tablet-width) {
     padding: 10px 19px 10px 21px;
   }
-}
-
-.card__button.button--more {
-  background-color: $bg-basic-grey;
-  color: $text-color-special-grey;
 }
 
 .card--more {
@@ -184,6 +187,7 @@ $card-top-offset: 81px;
       display: block;
       inset: $card-top-offset 0 0;
       border: 2px solid $bg-basic-grey;
+      z-index: -1;
     }
   }
 
