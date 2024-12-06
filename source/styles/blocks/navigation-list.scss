@@ -9,13 +9,13 @@
     flex-flow: row wrap;
     justify-content: flex-end;
     padding: 4px 4px 10px 0;
-    gap: 10px 34px;
+    gap: 23px 34px;
     background-color: transparent;
   }
 
   @media (min-width: $desktop-width) {
     padding-right: 2px;
-    column-gap: 33px;
+    gap: 23px 33px;
   }
 }
 
