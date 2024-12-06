@@ -26,12 +26,13 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 163px 1fr 163px;
+    grid-template-columns: 164px 1fr 162px;
     column-gap: 20px;
     padding: 55px 0 51px;
   }
 
   @media (min-width: $desktop-width) {
+    grid-template-columns: 164px 1fr 163px;
     padding: 65px 0 63px;
   }
 }
@@ -44,7 +45,6 @@
   &:focus,
   &:hover {
     color: $text-color-special-black-3;
-    outline: none;
   }
 
   &:active {
@@ -52,7 +52,11 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 6.5px 0;
+    padding: 6px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 8px 0;
   }
 }
 

@@ -4,41 +4,41 @@
   padding: 0;
 }
 
-.contacts__wrapper {
-  @media (min-width: $tablet-width) {
-    background-color: $bg-basic-white;
-  }
+.contacts--inner {
+  background-color: $bg-basic-grey;
 
   @media (min-width: $desktop-width) {
-    position: absolute;
-    top: 95px;
-    left: 110px;
-    z-index: 3;
     background-color: $bg-basic-white;
-    width: 565px;
-    height: 199px;
-    overflow: hidden;
-    padding: 0;
-    margin: 0;
   }
 }
 
-.contacts__wrapper--inner {
-  background-color: $bg-basic-white;
-
+.contacts__wrapper {
   @media (min-width: $tablet-width) {
-    background-color: $bg-basic-grey;
+    width: 768px;
+    margin: 0 auto;
+    overflow: hidden;
+    pointer-events: none;
+    padding: 0;
+    position: relative;
+    z-index: 2;
   }
 
   @media (min-width: $desktop-width) {
-    background-color: $bg-basic-white;
+    width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
+    pointer-events: none;
+    padding: 0;
+    position: relative;
+    z-index: 2;
   }
 }
 
 .contacts__content {
+  pointer-events: all;
   width: $mobile-width;
-  margin: 0 auto;
   padding: 0 20px;
+  margin: 0 auto;
   min-height: 112px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -48,13 +48,15 @@
     min-height: unset;
     width: $tablet-width;
     padding: 51px 70px 50px;
+    margin: 0;
     column-gap: 250px;
   }
 
   @media (min-width: $desktop-width) {
-    width: unset;
-    padding: 51px 70px 50px;
+    width: 565px;
+    margin: 95px 0 106px 110px;
     column-gap: 25px;
+    background-color: $bg-basic-white;
   }
 }
 
@@ -96,35 +98,40 @@
 
 .contacts__location {
   position: relative;
-  height: 362px;
+  min-height: 362px;
 
   @media (min-width: $tablet-width) {
     min-height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
   }
 }
 
 .contacts__iframe {
   position: absolute;
+  top: 0;
+  left: 0;
   z-index: 2;
   display: block;
   border: none;
   width: 100%;
-  height: 362px;
-
-  @media (min-width: $tablet-width) {
-    height: 400px;
-  }
+  height: 100%;
 }
 
 .contacts__map {
   position: absolute;
-  z-index: 1;
+  top: 0;
+  left: 0;
+  z-index: 2;
   display: block;
   width: 100%;
-  height: 362px;
+  height: 100%;
   object-fit: cover;
-
-  @media (min-width: $tablet-width) {
-    height: 400px;
-  }
 }

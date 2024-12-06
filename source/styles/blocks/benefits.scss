@@ -59,14 +59,16 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 37px 60px;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-flow: row nowrap;
+    grid-template-columns: repeat(4, 1fr);
     gap: 37px 79px;
+    // display: flex;
+    // flex-flow: row wrap;
+    //gap: 37px 79px;
   }
 }
 
@@ -81,7 +83,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 246px;
+    min-width: 230px;
+    max-width: 250px;
     padding-right: 0;
   }
 }
@@ -143,6 +146,13 @@
 .benefits__item:first-child::after {
   @media (min-width: $tablet-width) {
     left: 119px;
+  }
+}
+
+.benefits__item:nth-child(3)::after,
+.benefits__item:nth-child(4)::after {
+  @media (min-width: $desktop-width) {
+    left: 114px;
   }
 }
 
