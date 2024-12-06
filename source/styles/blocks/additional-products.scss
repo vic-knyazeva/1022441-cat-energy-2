@@ -297,20 +297,34 @@
   right: 0;
   z-index: -1;
   min-height: 290px;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/catalog-background@1x.png");
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/catalog-background-mobile@1x.webp");
   background-repeat: no-repeat;
   background-size: cover, cover;
   background-position: center center;
 
   @media (min-width: $tablet-width) {
     min-height: 200px;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/catalog-background-tablet@1x.png");
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/catalog-background-tablet@1x.webp");
   }
 
   @media (min-width: $desktop-width) {
     width: 245px;
     min-height: 288px;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/catalog-background-desktop@1x.png");
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/catalog-background-desktop@1x.webp");
+  }
+}
+
+@media (min-resolution: 2x) {
+  .additional-products__banner::before {
+    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/catalog-background-mobile@2x.webp");
+
+    @media (min-width: $tablet-width) {
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/catalog-background-tablet@2x.webp");
+    }
+
+    @media (min-width: $desktop-width) {
+      background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/catalog-background-desktop@2x.webp");
+    }
   }
 }
 
