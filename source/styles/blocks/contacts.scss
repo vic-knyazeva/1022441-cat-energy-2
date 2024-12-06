@@ -54,8 +54,7 @@
 
   @media (min-width: $desktop-width) {
     width: 565px;
-    margin-top: 95px;
-    margin-bottom: 106px;
+    margin: 95px 0 106px 110px;
     column-gap: 25px;
     background-color: $bg-basic-white;
   }
