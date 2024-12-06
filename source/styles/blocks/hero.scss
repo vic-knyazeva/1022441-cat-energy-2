@@ -35,6 +35,9 @@
 @media (min-resolution: 2x) {
   .hero::before {
     background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/index-background-mobile@2x.webp");
+    background-repeat: no-repeat;
+    background-size: cover, cover;
+    background-position: center center;
 
     @media (min-width: $desktop-width) {
       background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/index-background-desktop@2x.webp");
