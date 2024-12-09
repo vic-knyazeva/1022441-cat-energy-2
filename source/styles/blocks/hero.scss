@@ -134,20 +134,20 @@
 }
 
 .hero__link {
-  min-width: 280px;
+  width: 100%;
   min-height: 40px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
     top: 266px;
     left: 120px;
-    min-width: 242px;
+    width: 242px;
     min-height: 54px;
   }
 
   @media (min-width: $desktop-width) {
     position: static;
-    min-width: 244px;
+    width: 244px;
     margin: 52px 0 0 80px;
   }
 }

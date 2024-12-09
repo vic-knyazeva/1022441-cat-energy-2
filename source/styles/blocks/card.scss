@@ -44,6 +44,15 @@ $card-top-offset: 81px;
   place-self: start center;
   align-content: center;
 
+  &:focus,
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     height: 210px;
   }
@@ -87,6 +96,15 @@ $card-top-offset: 81px;
   color: $text-color-special-black-2;
   text-decoration: none;
   text-transform: uppercase;
+
+  &:focus,
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
