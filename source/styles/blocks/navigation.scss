@@ -1,6 +1,10 @@
 .navigation {
   position: relative;
   width: 100%;
+
+  @media (min-width: $desktop-width) {
+    max-width: 50%;
+  }
 }
 
 .navigation__wrapper {
@@ -8,17 +12,25 @@
   display: block;
   z-index: 1;
   width: 100%;
-  background-color: $bg-basic-white;
+  background-color: $text-color-special-black-1;
   border-top: 1px solid $bg-special-grey-3;
   margin: 10px 0 0;
 
   @media (min-width: $tablet-width) {
+    position: relative;
     background-color: transparent;
     border-top: unset;
   }
 
   @media (min-width: $desktop-width) {
     margin: 17px 0 0;
+    padding-left: 130px;
+  }
+}
+
+.header--main .navigation__wrapper {
+  @media (min-width: $desktop-width) {
+    position: absolute;
   }
 }
 
