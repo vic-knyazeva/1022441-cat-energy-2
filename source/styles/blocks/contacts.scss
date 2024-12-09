@@ -1,0 +1,137 @@
+.contacts {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts--inner {
+  background-color: $bg-basic-grey;
+
+  @media (min-width: $desktop-width) {
+    background-color: $bg-basic-white;
+  }
+}
+
+.contacts__wrapper {
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    margin: 0 auto;
+    overflow: hidden;
+    pointer-events: none;
+    padding: 0;
+    position: relative;
+    z-index: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
+    pointer-events: none;
+    padding: 0;
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.contacts__content {
+  pointer-events: all;
+  width: $mobile-width;
+  padding: 0 20px;
+  margin: 0 auto;
+  min-height: 112px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (min-width: $tablet-width) {
+    align-items: start;
+    min-height: unset;
+    width: $tablet-width;
+    padding: 51px 70px 50px;
+    margin: 0;
+    column-gap: 250px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 565px;
+    margin: 95px 0 106px 110px;
+    column-gap: 25px;
+    background-color: $bg-basic-white;
+  }
+}
+
+.contacts__title {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $text-color-special-black-1;
+  text-transform: uppercase;
+  margin: 16px 0 0;
+  padding: 10px 10px 10px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    margin: 0;
+    padding: 10px 10px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 10px 0;
+  }
+}
+
+.contacts__address {
+  font-style: normal;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.contacts__location {
+  position: relative;
+  min-height: 362px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.contacts__iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: block;
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+
+.contacts__map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

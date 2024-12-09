@@ -1,0 +1,42 @@
+.products {
+  width: 100%;
+  border-top: 1px solid $bg-special-grey-3;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    padding: 0 30px;
+    margin: 0 auto;
+    border-top: unset;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    padding: 0 110px;
+  }
+}
+
+.products--nojs {
+  border-top: unset;
+}
+
+.products__title {
+  font-family: $secondary-font;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  width: $mobile-width;
+  padding: 27px 20px 40px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    width: $tablet-width;
+    padding: 36px 0 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-content-width;
+    padding: 70px 0 34px;
+  }
+}
